@@ -18,6 +18,8 @@ const appRoutes: Routes = [
 
   ]
 },
+
+  { path: 'electronics', loadChildren: () => import('./electronics/electronics.module').then(module => module.ElectronicsModule)},
   { path:'dvds/new', component: DvdFormComponent },
   { path:'dvds/:index', component: DvdDetailComponent },
   { path: '', pathMatch: 'full', redirectTo: 'dvds' },

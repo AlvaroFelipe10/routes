@@ -1,12 +1,13 @@
-
-  <h2 mat-subheader>Book List</h2>
-  <a mat-list-item *ngFor="let b of books$ | async; let i=index" routerLink="/books/{{i}}">
-    <mat-icon mat-list-icon>library_books</mat-icon>
-    <h4 mat-line>{{b.title}}</h4>
-    <h5 mat-line>Pages:{{b.pages}}</h5>
-  </a>
-
+<mat-selection-list>
+  <div mat-subheader>Book List</div>
+  <mat-list-item mat-list-item *ngFor="let b of books$ | async; let i=index" routerLink="/books/{{i}}">
+    <mat-icon matListItemIcon>library_books</mat-icon>
+    <div matListItemTitle>{{b.title}}</div>
+    <div matListItemLine>Pages:{{b.pages}}</div>
+  </mat-list-item>
+  <mat-divider></mat-divider>
 <mat-divider>
-  <router-outlet>
-  </router-outlet>
+  <router-outlet></router-outlet>
 </mat-divider>
+
+

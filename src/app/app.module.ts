@@ -14,6 +14,7 @@ import { DvdFormComponent } from './dvd/dvd-form/dvd-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BookDetailComponent } from './book/book-detail/book-detail.component';
 import { BookAuthorComponent } from './book/book-author/book-author.component';
+import { ElectronicsModule } from './electronics/electronics.module';
 
 /*
 const appRoutes: Routes = [
@@ -39,8 +40,10 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     MaterialModule,
    // RouterModule.forRoot(appRoutes),
+   //ElectronicsModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

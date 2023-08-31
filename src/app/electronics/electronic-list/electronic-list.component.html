@@ -1,0 +1,9 @@
+  <mat-selection-list>
+    <div mat-subheader>Electronics List</div>
+    <mat-list-item mat-list-item *ngFor="let e of electronics$ | async; let i=index" routerLink="/electronics/{{i}}">
+      <mat-icon matListItemIcon>library_books</mat-icon>
+      <div matListItemTitle>{{e.name}}</div>
+      <div matListItemLine>Price: {{e.price}}</div>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+
